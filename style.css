@@ -1142,7 +1142,6 @@ ul {
 }
 
 .article-list-item {
-  border-bottom: 1px solid #ddd;
   font-size: 16px;
   padding: 15px 0;
 }
@@ -1177,6 +1176,42 @@ ul {
 }
 
 .section-subscribe .dropdown-toggle::after {
+  display: none;
+}
+
+.section-list {
+  margin: 40px 0;
+}
+
+.section-list--collapsed .section-list-item:nth-child(1n + 6) {
+  display: none;
+}
+
+.section-list-item {
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+  padding: 15px 0;
+}
+
+.section-list-item:first-child {
+  border-top: 1px solid #ddd;
+}
+
+.section-list-item a {
+  align-items: center;
+  color: $text_color;
+  display: flex;
+  justify-content: space-between;
+}
+
+.see-all-sections-trigger {
+  cursor: pointer;
+  display: block;
+  padding: 15px;
+  text-align: center;
+}
+
+.see-all-sections-trigger[aria-hidden="true"] {
   display: none;
 }
 
@@ -1389,17 +1424,19 @@ ul {
 }
 
 .article-relatives > * {
-  flex: 1 0 auto;
+  flex: 1 0 50%;
+  min-width: 50%;
+  overflow-wrap: break-word;
   margin-right: 0;
 }
 
 .article-relatives > *:last-child {
-  margin: 0;
+  padding: 0;
 }
 
 @media (min-width: 768px) {
   .article-relatives > * {
-    margin-right: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -1609,10 +1646,6 @@ ul {
 
 .share-linkedin::before {
   content: "\e900";
-}
-
-.share-googleplus::before {
-  content: "\e902";
 }
 
 /***** Comments *****/
@@ -4026,6 +4059,7 @@ ul {
 
 .search-result-description {
   margin-top: 15px;
+  word-break: break-word;
 }
 
 .search-result-votes, .search-result-meta-count {
@@ -4079,10 +4113,29 @@ ul {
   margin: 0 5px;
 }
 
+/* Non-latin search results highlight */
+/* Add a yellow background for Chinese */
+html[lang|="zh"] .search-result-description em {
+  font-style: normal;
+  background: yellow;
+}
+
+/* Use bold to highlight for the rest of supported non-latin languages */
+html[lang|="ar"] .search-result-description em,
+html[lang|="bg"] .search-result-description em,
+html[lang|="el"] .search-result-description em,
+html[lang|="he"] .search-result-description em,
+html[lang|="hi"] .search-result-description em,
+html[lang|="ko"] .search-result-description em,
+html[lang|="ja"] .search-result-description em,
+html[lang|="ru"] .search-result-description em,
+html[lang|="th"] .search-result-description em {
+  font-style: bold;
+}
+
 /*********************/
 /* Return Path edits */
 /*********************/
-
 body {
   font-family: 'adelle-sans', sans-serif;
   font-size: 16px;
@@ -4168,7 +4221,7 @@ hr {
 }
 
 .header a:hover {
-	transition: color .15s ease-in-out;
+  transition: color .15s ease-in-out;
 }
 
 .header .btn::after {
@@ -4255,7 +4308,7 @@ hr {
 main .sub-nav {
   margin-bottom: 50px;
   padding: 0;
-  min-height: auto;  
+  min-height: auto;
 }
 
 .category-container,
@@ -4279,7 +4332,7 @@ main .sub-nav {
 
 .article-list-item {
   padding: 0;
-	border: none;  
+  border: none;
 }
 
 .article-list-link {
@@ -4289,16 +4342,14 @@ main .sub-nav {
   padding: 25px;
   width: calc(100% + 50px);
   border-radius: 6px;
-  transition: border-color .15s ease-in-out,
-    					background-color .15s ease-in-out,
-    					box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out, background-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
 .article-list-link:hover {
   text-decoration: none;
   border-color: #d5d6d7;
   background-color: #f5f6f7;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .15);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 .article-list-link::after {
@@ -4386,24 +4437,18 @@ main .sub-nav {
   background-color: #e3e3e3;
 }
 
-.article-share .share {
-  
-}
-
 /* Blocks */
 .blocks-item {
   margin: 0 25px 25px;
   border: 1px solid #e3e3e3;
   border-radius: 6px;
-  transition: border-color .15s ease-in-out,
-    					background-color .15s ease-in-out,
-    					box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out, background-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
 .blocks-item:hover {
   border-color: #d5d6d7;
   background-color: #f5f6f7;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .15);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 .blocks-item * {
@@ -4426,7 +4471,7 @@ main .sub-nav {
 .blocks-item-link img {
   width: 100%;
   max-width: 100px;
-  height auto;
+  height: auto;
 }
 
 .blocks-item-link img,
@@ -4475,7 +4520,6 @@ main .sub-nav {
   .footer-inner {
     flex-direction: row;
   }
-  
   .footer-inner > div {
     margin-bottom: 0;
   }
