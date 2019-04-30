@@ -4133,11 +4133,8 @@ html[lang|="th"] .search-result-description em {
   font-style: bold;
 }
 
-/*********************/
-/* Return Path edits */
-/*********************/
 body {
-  font-family: 'adelle-sans', sans-serif;
+  font-family: "adelle-sans", sans-serif;
   font-size: 16px;
   letter-spacing: .015rem;
   line-height: 1.5;
@@ -4154,11 +4151,11 @@ h1, h2, h3,
 .comment-body,
 .community-follow [role="button"]::after,
 .post-content {
-  font-family: 'adelle', serif;
+  font-family: "adelle", serif;
 }
 
 h4, h5, h6 {
-  font-family: 'adelle-sans', sans-serif;
+  font-family: "adelle-sans", sans-serif;
 }
 
 p {
@@ -4241,6 +4238,7 @@ hr {
   padding-right: 25px;
   background-color: #cb333b;
   color: #fff;
+  background-image: url("/assets/hero-bg.svg");
 }
 
 /* Content */
@@ -4274,16 +4272,16 @@ hr {
   margin-bottom: 25px;
 }
 
+.section-tree .see-all-articles {
+  padding: 25px 0;
+}
+
 .section-tree-title {
   margin-bottom: 25px;
 }
 
 .section-tree-title a {
   color: #cb333b;
-}
-
-.section-tree .see-all-articles {
-  padding: 25px 0;
 }
 
 /* Subscribe */
@@ -4460,7 +4458,7 @@ main .sub-nav {
 }
 
 .blocks-item h3 {
-  font-family: 'adelle-sans', sans-serif;
+  font-family: "adelle-sans", sans-serif;
   color: #4c4b4d;
 }
 
@@ -4499,7 +4497,7 @@ main .sub-nav {
 }
 
 .footer i {
-  margin-right: 6.25px;
+  margin-right: 12.5px;
 }
 
 .footer .address {
@@ -4527,11 +4525,11 @@ main .sub-nav {
 
 /* Utilities */
 .rp-serif {
-  font-family: 'adelle', serif;
+  font-family: "adelle", serif;
 }
 
 .rp-sans {
-  font-family: 'adelle-sans', sans-serif;
+  font-family: "adelle-sans", sans-serif;
 }
 
 .rp-mt-auto {

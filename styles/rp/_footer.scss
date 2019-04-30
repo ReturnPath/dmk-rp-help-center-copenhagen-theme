@@ -1,0 +1,45 @@
+.footer {
+    margin-top: 0;
+    padding: $spacer 0;
+    background-color: #4c4b4d;
+    border: none;
+    font-size: 14px;
+
+    * {
+        color: $white;
+        line-height: 2;
+    }
+
+    a,
+    button {
+        color: $white;
+    }
+
+    i {
+        margin-right: 0.5 * $spacer;
+    }
+
+    .address {
+        display: flex;
+    }
+}
+
+.footer-inner {
+    flex-direction: column;
+
+    > div {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0.5 * $spacer;
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer-inner {
+        flex-direction: row;
+    }
+
+    .footer-inner > div {
+        margin-bottom: 0;
+    }
+}

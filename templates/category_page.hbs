@@ -27,7 +27,7 @@
                       {{#if promoted}}
                         <span data-title="{{t 'promoted'}}" class="icon-star"></span>
                       {{/if}}
-                      <strong>{{title}}{{dc 'arrow_right'}}</strong>
+                      <strong>{{title}}{{dc 'hc_arrow_right'}}</strong>
                       {{#if internal}}
                         <span class="icon-lock" title="{{t 'internal'}}"></span>
                       {{/if}}
@@ -37,7 +37,7 @@
                 {{/each}}
               </ul>
             	<a href="{{url}}" class="see-all-articles">
-                {{t 'show_all_articles' count=article_count}}{{dc 'arrow_right'}}
+                {{t 'show_all_articles' count=article_count}}{{dc 'hc_arrow_right'}}
               </a>
               {{#isnt more_articles}}
             		<i class="section-empty">
@@ -53,9 +53,9 @@
         {{/each}}
       </div>
     </div>
-    
+
     <section class="article-sidebar">
-      <p>{{dc 'jump_to_section'}}<br><strong>{{category.name}}</strong></p>
+      <p>{{dc 'hc_jump_to_section'}}<br><strong>{{category.name}}</strong></p>
       <hr>
       <ul>
         {{#each sections}}

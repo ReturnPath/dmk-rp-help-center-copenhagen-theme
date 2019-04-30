@@ -39,12 +39,12 @@
 
       {{pagination}}
     </section>
-    
+
     <section class="article-sidebar">
       {{#if settings.show_follow_section}}
         {{subscribe}}
       {{/if}}
-      <p id="categoryTitle">{{dc 'jump_to_section'}}<br><strong></strong></p>
+      <p id="categoryTitle">{{dc 'hc_jump_to_section'}}<br><strong></strong></p>
       <hr>
       <ul id="sectionsList"></ul>
     </section>
@@ -56,7 +56,7 @@
   	var cat = $('.breadcrumbs li:nth-child(2) a'),
   			title = cat.text(),
  				id = cat.attr('href').match(/[0-9]+/);
-  	
+
   	$.getJSON('/api/v2/help_center/en-us/categories/' + id + '/sections.json', function(data){
  			var output = "";
 

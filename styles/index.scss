@@ -37,4 +37,15 @@
 @import "user-profiles";
 @import "search_results";
 
-@import "return-path";
+//== Return Path
+@import "rp/variables";
+@import "rp/typography";
+@import "rp/header";
+@import "rp/hero";
+@import "rp/content";
+@import "rp/subscribe";
+@import "rp/containers";
+@import "rp/articles";
+@import "rp/blocks";
+@import "rp/footer";
+@import "rp/utilities";

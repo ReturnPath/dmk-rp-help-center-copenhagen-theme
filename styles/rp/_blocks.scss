@@ -1,0 +1,44 @@
+.blocks-item {
+    margin: 0 $spacer $spacer;
+    border: 1px solid #e3e3e3;
+    border-radius: 6px;
+    transition: border-color $timing $timing-function,
+                background-color $timing $timing-function,
+                box-shadow $timing $timing-function;
+}
+
+.blocks-item {
+    * {
+        transition: color $timing $timing-function;
+    }
+
+    h3 {
+        font-family: $rp-sans;
+        color: #4c4b4d;
+    }
+
+    &:hover {
+        border-color: #d5d6d7;
+        background-color: #f5f6f7;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .15);
+
+        * {
+            color: $red;
+        }
+    }
+}
+
+.blocks-item-link {
+    padding: 2 * $spacer;
+
+    img {
+        width: 100%;
+        max-width: 4 * $spacer;
+        height: auto;
+    }
+}
+
+.blocks-item-link img,
+.blocks-item-link h3 {
+    margin-bottom: 0.5 * $spacer;
+}

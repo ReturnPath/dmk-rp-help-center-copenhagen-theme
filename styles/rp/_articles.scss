@@ -1,0 +1,116 @@
+.article-sidebar {
+    flex: 0 0 25%;
+    font-size: 14px;
+}
+
+.article-list-item {
+    padding: 0;
+	border: none;
+
+    strong {
+        transition: color $timing $timing-function;
+    }
+}
+
+.article-list-link {
+    display: inline-block;
+    position: relative;
+    left: -$spacer;
+    padding: $spacer;
+    width: calc(100% + #{2 * $spacer});
+    border-radius: 6px;
+    transition: border-color $timing $timing-function,
+                background-color $timing $timing-function,
+                box-shadow $timing $timing-function;
+    &:hover {
+        text-decoration: none;
+        border-color: #d5d6d7;
+        background-color: #f5f6f7;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .15);
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: $spacer;
+        display: inline-block;
+        width: calc(100% - #{2 * $spacer});
+        height: 1px;
+        background-color: #d5d6d7;
+        opacity: 1;
+        transition: opacity $timing $timing-function;
+    }
+
+    &:hover::after {
+        opacity: 0;
+    }
+
+    span {
+        opacity: 0;
+        transition: opacity $timing $timing-function;
+    }
+
+    &:hover span {
+        opacity: 1;
+    }
+}
+
+.see-all-articles,
+.article-list-item:hover strong {
+    color: $red;
+}
+
+.article-header {
+    margin-bottom: $spacer;
+}
+
+.article-author {
+    margin-bottom: 0;
+}
+
+.article-sidebar li {
+    line-height: 2;
+}
+
+.article-footer {
+    display: block;
+    padding-bottom: $spacer;
+}
+
+.article-votes,
+.article-more-questions {
+    border-top: 1px solid #d5d6d7;
+    padding: $spacer 0;
+}
+
+.article-more-questions {
+    background-color: #f5f6f7;
+}
+
+.recent-articles,
+.related-articles {
+    margin-bottom: 2 * $spacer;
+}
+
+.recent-articles h3,
+.related-articles h3 {
+    margin: 0 0 $spacer 0;
+    padding: 0 0 $spacer 0;
+}
+
+.recent-articles h3::after,
+.related-articles h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background-color: #e3e3e3;
+}
+
+.article-share .share {
+
+}

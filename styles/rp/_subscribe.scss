@@ -1,0 +1,16 @@
+.section-subscribe,
+.section-subscribe a,
+.article-subscribe {
+    width: 100%;
+}
+
+.section-subscribe,
+.article-subscribe {
+    margin-bottom: $spacer;
+}
+
+.section-subscribe a,
+.article-subscribe {
+    font-weight: bold;
+    border-color: #e3e3e3;
+}

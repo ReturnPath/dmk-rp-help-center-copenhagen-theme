@@ -1,0 +1,50 @@
+body {
+    font-family: $rp-sans;
+    font-size: 16px;
+    letter-spacing: .015rem;
+    line-height: 1.5;
+}
+
+.breadcrumbs {
+    li {
+        color: #b4b4b4;
+
+        &::before {
+            color: #4c4b4d;
+        }
+
+        a,
+        a:active,
+        a:visited {
+            color: #4c4b4d;
+        }
+
+        &:last-child a {
+            color: #b4b4b4;
+        }
+    }
+}
+
+.section {
+    margin-bottom: 2 * $spacer;
+}
+
+.section-tree {
+    flex-direction: column;
+
+    .section {
+        margin-bottom: $spacer;
+    }
+
+    .see-all-articles {
+        padding: $spacer 0;
+    }
+}
+
+.section-tree-title {
+    margin-bottom: $spacer;
+
+    a {
+        color: $red;
+    }
+}

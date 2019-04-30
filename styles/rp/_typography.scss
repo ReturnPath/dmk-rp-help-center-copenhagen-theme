@@ -1,0 +1,33 @@
+h1, h2, h3, h4, h5, h6 {
+    position: relative;
+    margin-bottom: $spacer;
+    font-weight: bold;
+}
+
+h1, h2, h3,
+.comment-body,
+.community-follow [role="button"]::after,
+.post-content {
+    font-family: $rp-serif;
+}
+
+h4, h5, h6 {
+    font-family: $rp-sans;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: $spacer;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+hr {
+    margin: $spacer 0;
+    padding: 0;
+    height: 1px;
+    border: none;
+    background-color: #e3e3e3;
+}

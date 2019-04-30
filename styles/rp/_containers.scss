@@ -1,0 +1,18 @@
+main .sub-nav {
+    margin-bottom: 2 * $spacer;
+    padding: 0;
+    min-height: auto;
+}
+
+.category-container,
+.section-container {
+    justify-content: flex-start;
+}
+
+.article,
+.category-content,
+.section-content {
+    flex: 0 0 75%;
+    padding: 0 2 * $spacer 0 0;
+    max-width: none;
+}

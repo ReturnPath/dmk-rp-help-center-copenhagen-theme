@@ -11,7 +11,7 @@
       "type": "color",
       "description": "brand_color_description",
       "label": "brand_color_label",
-      "value": "#0072EF"
+      "value": "#cb333b"
     }, {
       "identifier": "brand_text_color",
       "type": "color",
@@ -109,12 +109,12 @@
       "description": "homepage_background_image_description",
       "label": "homepage_background_image_label"
     }, {
-      "identifier": "community_background_image",
+      "identifier": "hero-bg",
       "type": "file",
       "description": "community_background_image_description",
       "label": "community_background_image_label"
     }, {
-      "identifier": "community_image",
+      "identifier": "hero-bg",
       "type": "file",
       "description": "community_image_description",
       "label": "community_image_label"
