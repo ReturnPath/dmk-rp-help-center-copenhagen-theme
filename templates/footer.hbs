@@ -1,22 +1,53 @@
 <footer class="footer">
   <div class="footer-inner">
-    {{#link 'help_center'}}{{help_center.name}}{{/link}}
-
-    <div class="footer-language-selector">
-      {{#if alternative_locales}}
-        <div class="dropdown language-selector">
-          <button class="dropdown-toggle" aria-haspopup="true">
-            {{current_locale.name}}
-          </button>
-          <span class="dropdown-menu dropdown-menu-end" role="menu">
-            {{#each alternative_locales}}
-              <a href="{{url}}" dir="{{direction}}" rel="nofollow" role="menuitem">
-                {{name}}
-              </a>
-            {{/each}}
-          </span>
-        </div>
-      {{/if}}
+    <div>
+      <div class="logo">
+        {{#link 'help_center'}}
+          <img src="{{settings.logo}}" alt="{{t 'home_page' name=help_center.name}}">
+        {{/link}}
+      </div>
+      <div class="link-list rp-mb-auto">
+        <ul>
+          <li><i class="far fa-copyright"></i><script>document.write(new Date().getFullYear())</script> <strong>{{dc 'return_path_link'}}</strong> {{dc 'all_rights_reserved'}}</li>
+        </ul>
+      </div>
+      <div class="link-list">
+        <ul>
+          <li><i class="fas fa-phone"></i>{{dc 'phone_number'}}</li>
+          <li class="address"><span><i class="fas fa-building"></i></span>{{dc 'corporate_hq'}}</li>
+        </ul>
+      </div>
+      <div class="footer-language-selector rp-mt-auto">
+        {{#if alternative_locales}}
+          <div class="dropdown language-selector">
+            <button class="dropdown-toggle" aria-haspopup="true">
+              {{current_locale.name}}
+            </button>
+            <span class="dropdown-menu dropdown-menu-end" role="menu">
+              {{#each alternative_locales}}
+                <a href="{{url}}" dir="{{direction}}" rel="nofollow" role="menuitem">
+                  {{name}}
+                </a>
+              {{/each}}
+            </span>
+          </div>
+        {{/if}}
+      </div>
+    </div>
+    <div>
+      {{dc 'knowledge_and_training_list'}}
+    </div>
+    <div>
+      <div class="link-list">
+        <strong class="rp-serif">{{dc 'help_and_support'}}</strong>
+        <ul>
+          <li>{{link 'new_request'}}</li>
+          <li>{{link 'my_activities'}}</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+    	{{dc 'about_list'}}
     </div>
   </div>
 </footer>

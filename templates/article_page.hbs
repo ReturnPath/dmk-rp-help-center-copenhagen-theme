@@ -1,29 +1,9 @@
-<div class="container-divider"></div>
 <div class="container">
   <nav class="sub-nav">
     {{breadcrumbs}}
-    {{search scoped=settings.scoped_kb_search submit=false}}
   </nav>
 
   <div class="article-container" id="article-container">
-    <section class="article-sidebar">
-      {{#if settings.show_articles_in_section}}
-        <section class="section-articles collapsible-sidebar">
-        <h3 class="collapsible-sidebar-title sidenav-title">{{t 'articles_in_section'}}</h3>
-        <ul>
-          {{#each section.articles}}
-            <li>
-              <a href="{{url}}" class="sidenav-item {{#is id ../article.id}}current-article{{/is}}">{{title}}</a>
-            </li>
-          {{/each}}
-        </ul>
-        {{#if section.more_articles}}
-          <a href="{{section.url}}" class="article-sidebar-item">{{t 'see_more'}}</a>
-        {{/if}}
-        </section>
-      {{/if}}
-    </section>
-
     <article class="article">
       <header class="article-header">
         <h1 title="{{article.title}}" class="article-title">
@@ -59,10 +39,6 @@
             </ul>
           </div>
         </div>
-
-        {{#if settings.show_follow_article}}
-          {{subscribe}}
-        {{/if}}
       </header>
 
       <section class="article-info">
@@ -87,9 +63,6 @@
 
       <footer>
         <div class="article-footer">
-          {{#if settings.show_article_sharing}}
-            <div class="article-share">{{share}}</div>
-          {{/if}}
           {{#if settings.show_article_comments}}
             {{#if comments}}
               <a href="#article-comments" class="article-comment-count">
@@ -98,36 +71,30 @@
               </a>
             {{/if}}
           {{/if}}
-        </div>
-        {{#with article}}
-          <div class="article-votes">
-            <span class="article-votes-question">{{t 'was_this_article_helpful'}}</span>
-            <div class="article-votes-controls" role='radiogroup'>
-              {{vote 'up' role='radio' class='button article-vote article-vote-up'}}
-              {{vote 'down' role='radio' class='button article-vote article-vote-down'}}
+          
+          {{#with article}}
+            <div class="article-votes">
+              <span class="article-votes-question">{{t 'was_this_article_helpful'}}</span>
+              <div class="article-votes-controls" role='radiogroup'>
+                {{vote 'up' role='radio' class='button article-vote article-vote-up'}}
+                {{vote 'down' role='radio' class='button article-vote article-vote-down'}}
+              </div>
+              <small class="article-votes-count">
+                {{vote 'label' class='article-vote-label'}}
+              </small>
             </div>
-            <small class="article-votes-count">
-              {{vote 'label' class='article-vote-label'}}
-            </small>
-          </div>
-        {{/with}}
+          {{/with}}
 
-        <div class="article-more-questions">
-          {{request_callout}}
-        </div>
-        <div class="article-return-to-top">
-          <a href="#article-container">{{t 'return_to_top'}}<span class="icon-arrow-up"></span></a>
+          <div class="article-more-questions">
+            {{request_callout}}
+          </div>
+          
+          <div class="article-return-to-top">
+            <a href="#article-container">{{t 'return_to_top'}}<span class="icon-arrow-up"></span></a>
+          </div>
         </div>
       </footer>
 
-      <section class="article-relatives">
-        {{#if settings.show_recently_viewed_articles}}
-          {{recent_articles}}
-        {{/if}}
-        {{#if settings.show_related_articles}}
-          {{related_articles}}
-        {{/if}}
-      </section>
       {{#if settings.show_article_comments}}
         <div class="article-comments" id="article-comments">
           <section class="comments">
@@ -227,5 +194,35 @@
         </div>
       {{/if}}
     </article>
+    
+    <section class="article-sidebar">
+      {{#if settings.show_follow_article}}
+        {{subscribe}}
+      {{/if}}
+      {{#if settings.show_articles_in_section}}
+        <section class="section-articles collapsible-sidebar">
+        <h3 class="collapsible-sidebar-title sidenav-title">{{t 'articles_in_section'}}</h3>
+        <ul>
+          {{#each section.articles}}
+            <li>
+              <a href="{{url}}" class="sidenav-item {{#is id ../article.id}}current-article{{/is}}">{{title}}</a>
+            </li>
+          {{/each}}
+        </ul>
+        {{#if section.more_articles}}
+          <a href="{{section.url}}" class="article-sidebar-item">{{t 'see_more'}}</a>
+        {{/if}}
+        </section>
+      {{/if}}
+      {{#if settings.show_related_articles}}
+        {{related_articles}}
+      {{/if}}
+      {{#if settings.show_recently_viewed_articles}}
+        {{recent_articles}}
+      {{/if}}
+      {{#if settings.show_article_sharing}}
+        <div class="article-share">{{share}}</div>
+      {{/if}}
+    </section>
   </div>
 </div>

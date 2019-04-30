@@ -11,5 +11,28 @@
       {{link 'new_request' class='submit-a-request'}}
     </nav>
     {{user_info}}
+    {{#if alternative_locales}}
+    	<span class="spacer">|</span>
+      <div class="dropdown language-selector">
+        <button class="dropdown-toggle" aria-haspopup="true">
+          {{current_locale.name}}
+        </button>
+        <span class="dropdown-menu dropdown-menu-end" role="menu">
+          {{#each alternative_locales}}
+            <a href="{{url}}" dir="{{direction}}" rel="nofollow" role="menuitem">
+              {{name}}
+            </a>
+          {{/each}}
+        </span>
+      </div>
+    {{/if}}
   </div>
 </header>
+
+<section class="section hero">
+  <div class="hero-inner">
+    <h1>{{dc 'how_can_we_help'}}</h1>
+    {{search submit=false instant=settings.instant_search class='search search-full'}}
+    <!-- {{search submit=false class='search search-full' scoped=settings.scoped_community_search}} -->
+  </div>
+</section>

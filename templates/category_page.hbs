@@ -1,18 +1,17 @@
-<div class="container-divider"></div>
 <div class="container">
   <nav class="sub-nav">
     {{breadcrumbs}}
-    {{search submit=false}}
   </nav>
 
   <div class="category-container">
     <div class="category-content">
       <header class="page-header">
-        <h1>{{category.name}}</h1>
+        <h2>{{category.name}}</h2>
         {{#if category.description}}
           <p class="page-header-description">{{category.description}}</p>
         {{/if}}
       </header>
+      <hr>
 
       <div class="section-tree">
         {{#each sections}}
@@ -24,21 +23,27 @@
               <ul class="article-list">
                 {{#each articles}}
                   <li class="article-list-item{{#if promoted}} article-promoted{{/if}}">
-                    {{#if promoted}}
-                      <span data-title="{{t 'promoted'}}" class="icon-star"></span>
-                    {{/if}}
-                    <a href="{{url}}" class="article-list-link">{{title}}</a>
-                    {{#if internal}}
-                      <span class="icon-lock" title="{{t 'internal'}}"></span>
-                    {{/if}}
+                    <a href="{{url}}" class="article-list-link">
+                      {{#if promoted}}
+                        <span data-title="{{t 'promoted'}}" class="icon-star"></span>
+                      {{/if}}
+                      <strong>{{title}}{{dc 'arrow_right'}}</strong>
+                      {{#if internal}}
+                        <span class="icon-lock" title="{{t 'internal'}}"></span>
+                      {{/if}}
+                      <p><em>{{excerpt body characters=100}}</em></p>
+                    </a>
                   </li>
                 {{/each}}
               </ul>
-              {{#if more_articles}}
-                <a href="{{url}}" class="see-all-articles">
-                  {{t 'show_all_articles' count=article_count}}
-                </a>
-              {{/if}}
+            	<a href="{{url}}" class="see-all-articles">
+                {{t 'show_all_articles' count=article_count}}{{dc 'arrow_right'}}
+              </a>
+              {{#isnt more_articles}}
+            		<i class="section-empty">
+                  <a href="{{url}}">{{t 'empty'}}</a>
+                </i>
+              {{/isnt}}
             {{/if}}
           </section>
         {{else}}
@@ -48,5 +53,19 @@
         {{/each}}
       </div>
     </div>
+    
+    <section class="article-sidebar">
+      <p>{{dc 'jump_to_section'}}<br><strong>{{category.name}}</strong></p>
+      <hr>
+      <ul>
+        {{#each sections}}
+        	<li><a href="{{url}}">{{name}}</a></li>
+        {{else}}
+          <li><i class="category-empty">
+            <a href="{{category.url}}">{{t 'empty'}}</a>
+          </i></li>
+        {{/each}}
+      </ul>
+    </section>
   </div>
 </div>

@@ -27,11 +27,7 @@
                 <li>
                   <ol class="breadcrumbs search-result-breadcrumbs">
                     {{#each path_steps}}
-                      {{#is url '#'}}
-                        <li title="{{name}}">{{name}}</li>
-                      {{else}}
-                        <li title="{{name}}"><a href="{{url}}">{{name}}</a></li>
-                      {{/is}}
+                      <li title="{{name}}"><a href="{{url}}">{{name}}</a></li>
                     {{/each}}
                   </ol>
                 </li>
