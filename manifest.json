@@ -109,12 +109,12 @@
       "description": "homepage_background_image_description",
       "label": "homepage_background_image_label"
     }, {
-      "identifier": "hero-bg",
+      "identifier": "community_background_image",
       "type": "file",
       "description": "community_background_image_description",
       "label": "community_background_image_label"
     }, {
-      "identifier": "hero-bg",
+      "identifier": "community_image",
       "type": "file",
       "description": "community_image_description",
       "label": "community_image_label"
