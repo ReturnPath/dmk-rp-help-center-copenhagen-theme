@@ -25,12 +25,12 @@
                   <li class="article-list-item{{#if promoted}} article-promoted{{/if}}">
                     <a href="{{url}}" class="article-list-link">
                       {{#if promoted}}
-                        <span data-title="{{t 'promoted'}}" class="icon-star"></span>
+                        <i class="far fa-star" data-title="{{t 'promoted'}}"></i>
+                      {{/if}}
+                      {{#if internal}}
+                        <i class="fas fa-lock" title="{{t 'internal'}}"></i>
                       {{/if}}
                       <strong>{{title}}{{dc 'hc_arrow_right'}}</strong>
-                      {{#if internal}}
-                        <span class="icon-lock" title="{{t 'internal'}}"></span>
-                      {{/if}}
                       <p><em>{{excerpt body characters=100}}</em></p>
                     </a>
                   </li>

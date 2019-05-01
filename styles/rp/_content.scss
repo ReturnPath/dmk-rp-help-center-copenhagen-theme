@@ -6,6 +6,10 @@ body {
     color: $gray-base;
 }
 
+i[class^="fa"] {
+    margin-right: 0.25 * $spacer;
+}
+
 .breadcrumbs {
     li {
         color: $gray;
