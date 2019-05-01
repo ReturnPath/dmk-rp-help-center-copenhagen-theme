@@ -10,6 +10,10 @@
     strong {
         transition: color $timing $timing-function;
     }
+
+    a {
+        color: $gray-base;
+    }
 }
 
 .article-list-link {
@@ -46,12 +50,12 @@
         opacity: 0;
     }
 
-    span {
+    span > .fas {
         opacity: 0;
         transition: opacity $timing $timing-function;
     }
 
-    &:hover span {
+    &:hover span > .fas {
         opacity: 1;
     }
 }
@@ -122,5 +126,11 @@
         font-weight: bold;
         font-size: 14px;
         color: $gray-base;
+    }
+}
+
+.article-sidebar {
+    a {
+        color: $rp-red;
     }
 }
