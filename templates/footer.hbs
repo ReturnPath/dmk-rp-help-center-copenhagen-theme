@@ -20,9 +20,7 @@
       <div class="footer-language-selector rp-mt-auto">
         {{#if alternative_locales}}
           <div class="dropdown language-selector">
-            <button class="dropdown-toggle" aria-haspopup="true">
-              {{current_locale.name}}
-            </button>
+            <button class="dropdown-toggle" aria-haspopup="true"><i class="fas fa-globe"></i>{{current_locale.name}}</button>
             <span class="dropdown-menu dropdown-menu-end" role="menu">
               {{#each alternative_locales}}
                 <a href="{{url}}" dir="{{direction}}" rel="nofollow" role="menuitem">
@@ -39,7 +37,7 @@
     </div>
     <div>
       <div class="link-list">
-        <strong class="rp-serif">{{dc 'hc_help_and_support'}}</strong>
+        <strong>{{dc 'hc_help_and_support'}}</strong>
         <ul>
           <li>{{link 'new_request'}}</li>
           <li>{{link 'my_activities'}}</li>

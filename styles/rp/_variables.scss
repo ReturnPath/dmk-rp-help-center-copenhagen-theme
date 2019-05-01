@@ -1,7 +1,61 @@
+//== Grays
+$gray-base: #3C4858;
+$gray-base-alt: #4C4B4D;
+$gray-darkest: #7E909E;
+$gray-darkest-alt: #707274;
+$gray-darker: #95989b;
+$gray-dark: #AAADAF;
+$gray: #B4B4B4;
+$gray-light: #D5D6D7;
+$gray-lighter: #EAEEF2;
+$gray-lighter-alt: #E3E3E3;
+$gray-lightest: #F5F6F7;
+$white: #FFF;
+$black: #000;
+
+//== Colors
+$rp-color-change: 10%;
+$rp-red: #CB333B;
+$rp-pink: #E28C8C;
+$rp-orange-dark: #E35205;
+$rp-orange-light: #FF9D6E;
+$rp-yellow-dark: #FFA300;
+$rp-yellow-light: #F1BE48;
+$rp-green-dark: #00965E;
+$rp-green-light: #84BD00;
+$rp-teal-dark: #008C95;
+$rp-teal-light: #2DCCD3;
+$rp-teal-lighter: #C9F2F4;
+$rp-blue-dark: #00A3E0;
+$rp-blue-light: #71C5e8;
+$rp-blue-lighter: #D5EEF7;
+$rp-navy-dark: #003D51;
+$rp-navy-light: #4298B5;
+$rp-purple-dark: #6D2077;
+$rp-purple-light: #AB4FC6;
+
+//== Theme colors
+$theme-about: $rp-red;
+$theme-arcade: $black;
+$theme-request-a-demo-promo: #fff;
+$theme-footer-promo: $gray-light;
+$theme-solutions: $rp-blue-dark;
+$theme-deliverability: $rp-blue-dark;
+$theme-optimization: $rp-yellow-dark;
+$theme-client-services: $rp-purple-light;
+$theme-partner-platform: $rp-teal-light;
+$theme-email-fraud: $rp-navy-dark;
+$theme-partners: $rp-teal-light;
+$theme-resources: $rp-green-light;
+
+//== Social colors
+$twitter: #00abf0;
+$facebook: #3a579a;
+$linkedin: #127bb6;
+$pinterest: #cd1c1f;
+
 $rp-sans: 'adelle-sans', sans-serif;
 $rp-serif: 'adelle', serif;
 $spacer: 25px;
-$white: #fff;
-$red: #cb333b;
 $timing: .15s;
 $timing-function: ease-in-out;

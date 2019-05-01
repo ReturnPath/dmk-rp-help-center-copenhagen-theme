@@ -1,6 +1,6 @@
 .blocks-item {
     margin: 0 $spacer $spacer;
-    border: 1px solid #e3e3e3;
+    border: 1px solid $gray-lighter;
     border-radius: 6px;
     transition: border-color $timing $timing-function,
                 background-color $timing $timing-function,
@@ -14,16 +14,16 @@
 
     h3 {
         font-family: $rp-sans;
-        color: #4c4b4d;
+        color: $gray-base;
     }
 
     &:hover {
-        border-color: #d5d6d7;
-        background-color: #f5f6f7;
+        border-color: $gray-light;
+        background-color: $gray-lightest;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .15);
 
         * {
-            color: $red;
+            color: $rp-red;
         }
     }
 }

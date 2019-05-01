@@ -4143,7 +4143,7 @@ h1, h2, h3,
 .comment-body,
 .community-follow [role="button"]::after,
 .post-content {
-  font-family: "adelle", serif;
+  font-family: "adelle-sans", sans-serif;
 }
 
 h4, h5, h6 {
@@ -4164,7 +4164,7 @@ hr {
   padding: 0;
   height: 1px;
   border: none;
-  background-color: #e3e3e3;
+  background-color: #EAEEF2;
 }
 
 .header {
@@ -4174,7 +4174,7 @@ hr {
   width: 100%;
   height: 75px;
   max-width: 100%;
-  background-color: rgba(76, 75, 77, 0.5);
+  background-color: rgba(60, 72, 88, 0.5);
 }
 
 .header .container,
@@ -4188,7 +4188,7 @@ hr {
 .header .btn,
 .header button,
 .header .spacer {
-  color: #fff;
+  color: #FFF;
 }
 
 .header .btn,
@@ -4205,7 +4205,7 @@ hr {
 .header button:hover,
 .header button:visited,
 .header button:active {
-  color: #fff;
+  color: #FFF;
 }
 
 .header a:hover {
@@ -4214,7 +4214,7 @@ hr {
 
 .header .btn::after {
   padding: 0;
-  color: #fff;
+  color: #FFF;
 }
 
 .header .spacer {
@@ -4226,8 +4226,8 @@ hr {
   padding-top: 75px;
   padding-left: 25px;
   padding-right: 25px;
-  background-color: #cb333b;
-  color: #fff;
+  background-color: #CB333B;
+  color: #FFF;
 }
 
 body {
@@ -4235,24 +4235,25 @@ body {
   font-size: 16px;
   letter-spacing: .015rem;
   line-height: 1.5;
+  color: #3C4858;
 }
 
 .breadcrumbs li {
-  color: #b4b4b4;
+  color: #B4B4B4;
 }
 
 .breadcrumbs li::before {
-  color: #4c4b4d;
+  color: #3C4858;
 }
 
 .breadcrumbs li a,
 .breadcrumbs li a:active,
 .breadcrumbs li a:visited {
-  color: #4c4b4d;
+  color: #3C4858;
 }
 
 .breadcrumbs li:last-child a {
-  color: #b4b4b4;
+  color: #B4B4B4;
 }
 
 .section {
@@ -4276,7 +4277,7 @@ body {
 }
 
 .section-tree-title a {
-  color: #cb333b;
+  color: #CB333B;
 }
 
 .section-subscribe,
@@ -4293,7 +4294,7 @@ body {
 .section-subscribe a,
 .article-subscribe {
   font-weight: bold;
-  border-color: #e3e3e3;
+  border-color: #EAEEF2;
 }
 
 main .sub-nav {
@@ -4341,8 +4342,8 @@ main .sub-nav {
 
 .article-list-link:hover {
   text-decoration: none;
-  border-color: #d5d6d7;
-  background-color: #f5f6f7;
+  border-color: #D5D6D7;
+  background-color: #F5F6F7;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
@@ -4354,7 +4355,7 @@ main .sub-nav {
   display: inline-block;
   width: calc(100% - 50px);
   height: 1px;
-  background-color: #d5d6d7;
+  background-color: #D5D6D7;
   opacity: 1;
   transition: opacity 0.15s ease-in-out;
 }
@@ -4374,7 +4375,7 @@ main .sub-nav {
 
 .see-all-articles,
 .article-list-item:hover strong {
-  color: #cb333b;
+  color: #CB333B;
 }
 
 .article-header {
@@ -4396,12 +4397,12 @@ main .sub-nav {
 
 .article-votes,
 .article-more-questions {
-  border-top: 1px solid #d5d6d7;
+  border-top: 1px solid #D5D6D7;
   padding: 25px 0;
 }
 
 .article-more-questions {
-  background-color: #f5f6f7;
+  background-color: #F5F6F7;
 }
 
 .recent-articles,
@@ -4424,12 +4425,26 @@ main .sub-nav {
   display: inline-block;
   width: 100%;
   height: 1px;
-  background-color: #e3e3e3;
+  background-color: #EAEEF2;
+}
+
+.promoted-articles-item {
+  align-self: center !important;
+}
+
+.promoted-articles-item a {
+  margin: 0 6.25px 12.5px;
+  padding: 6.25px 12.5px;
+  border: none !important;
+  background-color: #F5F6F7;
+  font-weight: bold;
+  font-size: 14px;
+  color: #3C4858;
 }
 
 .blocks-item {
   margin: 0 25px 25px;
-  border: 1px solid #e3e3e3;
+  border: 1px solid #EAEEF2;
   border-radius: 6px;
   transition: border-color 0.15s ease-in-out, background-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -4440,17 +4455,17 @@ main .sub-nav {
 
 .blocks-item h3 {
   font-family: "adelle-sans", sans-serif;
-  color: #4c4b4d;
+  color: #3C4858;
 }
 
 .blocks-item:hover {
-  border-color: #d5d6d7;
-  background-color: #f5f6f7;
+  border-color: #D5D6D7;
+  background-color: #F5F6F7;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 .blocks-item:hover * {
-  color: #cb333b;
+  color: #CB333B;
 }
 
 .blocks-item-link {
@@ -4471,19 +4486,19 @@ main .sub-nav {
 .footer {
   margin-top: 0;
   padding: 25px 0;
-  background-color: #4c4b4d;
+  background-color: #3C4858;
   border: none;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .footer * {
-  color: #fff;
+  color: #FFF;
   line-height: 2;
 }
 
 .footer a,
 .footer button {
-  color: #fff;
+  color: #FFF;
 }
 
 .footer i {
@@ -4513,18 +4528,14 @@ main .sub-nav {
   }
 }
 
-.rp-serif {
-  font-family: "adelle", serif;
-}
-
-.rp-sans {
-  font-family: "adelle-sans", sans-serif;
-}
-
 .rp-mt-auto {
   margin-top: auto;
 }
 
 .rp-mb-auto {
   margin-bottom: auto;
+}
+
+.pt {
+  padding-top: 25px;
 }

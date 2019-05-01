@@ -8,7 +8,7 @@ h1, h2, h3,
 .comment-body,
 .community-follow [role="button"]::after,
 .post-content {
-    font-family: $rp-serif;
+    font-family: $rp-sans;
 }
 
 h4, h5, h6 {
@@ -29,5 +29,5 @@ hr {
     padding: 0;
     height: 1px;
     border: none;
-    background-color: #e3e3e3;
+    background-color: $gray-lighter;
 }

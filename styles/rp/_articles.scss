@@ -24,8 +24,8 @@
                 box-shadow $timing $timing-function;
     &:hover {
         text-decoration: none;
-        border-color: #d5d6d7;
-        background-color: #f5f6f7;
+        border-color: $gray-light;
+        background-color: $gray-lightest;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .15);
     }
 
@@ -37,7 +37,7 @@
         display: inline-block;
         width: calc(100% - #{2 * $spacer});
         height: 1px;
-        background-color: #d5d6d7;
+        background-color: $gray-light;
         opacity: 1;
         transition: opacity $timing $timing-function;
     }
@@ -58,7 +58,7 @@
 
 .see-all-articles,
 .article-list-item:hover strong {
-    color: $red;
+    color: $rp-red;
 }
 
 .article-header {
@@ -80,12 +80,12 @@
 
 .article-votes,
 .article-more-questions {
-    border-top: 1px solid #d5d6d7;
+    border-top: 1px solid $gray-light;
     padding: $spacer 0;
 }
 
 .article-more-questions {
-    background-color: #f5f6f7;
+    background-color: $gray-lightest;
 }
 
 .recent-articles,
@@ -108,9 +108,19 @@
     display: inline-block;
     width: 100%;
     height: 1px;
-    background-color: #e3e3e3;
+    background-color: $gray-lighter;
 }
 
-.article-share .share {
+.promoted-articles-item {
+    align-self: center !important;
 
+    a {
+        margin: 0 0.25 * $spacer 0.5 * $spacer;
+        padding: 0.25 * $spacer 0.5 * $spacer;
+        border: none !important;
+        background-color: $gray-lightest;
+        font-weight: bold;
+        font-size: 14px;
+        color: $gray-base;
+    }
 }

@@ -3,24 +3,25 @@ body {
     font-size: 16px;
     letter-spacing: .015rem;
     line-height: 1.5;
+    color: $gray-base;
 }
 
 .breadcrumbs {
     li {
-        color: #b4b4b4;
+        color: $gray;
 
         &::before {
-            color: #4c4b4d;
+            color: $gray-base;
         }
 
         a,
         a:active,
         a:visited {
-            color: #4c4b4d;
+            color: $gray-base;
         }
 
         &:last-child a {
-            color: #b4b4b4;
+            color: $gray;
         }
     }
 }
@@ -45,6 +46,6 @@ body {
     margin-bottom: $spacer;
 
     a {
-        color: $red;
+        color: $rp-red;
     }
 }
