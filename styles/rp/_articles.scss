@@ -107,13 +107,13 @@
 }
 
 .promoted-articles {
-    margin: -1 * $spacer !important;
+    margin: 0 -1 * $spacer !important;
 }
 
 .promoted-articles-item {
     align-self: center !important;
     flex: none;
-    width: (1/3) * 100%;
+    width: 100%;
     margin: 0;
     padding: $spacer / 2 $spacer;
 
@@ -124,6 +124,12 @@
         font-weight: bold;
         font-size: 14px;
         color: $gray-base;
+    }
+}
+
+@media only screen and (min-width: $md) {
+    .promoted-articles-item {
+        width: (1/3) * 100%;
     }
 }
 
@@ -170,4 +176,8 @@
 
 .article-comments {
     margin-bottom: 2 * $spacer;
+}
+
+.article-header {
+    margin-top: 0 !important;
 }

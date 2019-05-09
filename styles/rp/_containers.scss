@@ -1,7 +1,13 @@
 main .sub-nav {
-    margin-bottom: 2 * $spacer;
+    margin-bottom: $spacer;
     padding: 0;
     min-height: auto;
+}
+
+@media only screen and (min-width: $md) {
+    main .sub-nav {
+        margin-bottom: 2 * $spacer;
+    }
 }
 
 .category-container,

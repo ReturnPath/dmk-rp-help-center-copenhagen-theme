@@ -50,6 +50,29 @@
         transition: color $timing $timing-function;
     }
 
+    .user-nav {
+        a {
+            color: $gray-base;
+
+            &:hover,
+            &:visited,
+            &:active {
+                color: $gray-base;
+            }
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .icon-menu {
+        order: 1;
+        margin-left: $spacer / 2;
+        margin-right: 0;
+        color: #fff;
+    }
+
     .btn::after {
         padding: 0;
         color: $white;
@@ -58,5 +81,65 @@
     .spacer {
         padding: 0 0.5 * $spacer;
         font-size: 24px;
+    }
+}
+
+.logo-full {
+    display: none;
+}
+
+.logo-solo {
+    display: inline;
+}
+
+@media only screen and (min-width: $md) {
+    .logo-full {
+        display: inline;
+    }
+
+    .logo-solo {
+        display: none;
+    }
+
+    .header {
+        .user-nav {
+            a {
+                color: #fff;
+
+                &:hover,
+                &:visited,
+                &:active {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.page-header {
+    margin: 0;
+}
+
+.article,
+.category-content,
+.section-content {
+    flex: 1 !important;
+    padding: 0 !important;
+}
+
+.article-sidebar {
+    display: none;
+}
+
+@media only screen and (min-width: $md) {
+    .article,
+    .category-content,
+    .section-content {
+        flex: 0 0 75% !important;
+        padding: 0 2 * $spacer 0 0 !important;
+    }
+
+    .article-sidebar {
+        display: block;
     }
 }

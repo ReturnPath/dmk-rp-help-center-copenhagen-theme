@@ -6,7 +6,7 @@
     flex: none;
     margin: 0 !important;
     padding: $spacer;
-    width: (1/3) * 100% !important;
+    width: 100% !important;
     border: none;
     transition: border-color $timing $timing-function,
                 background-color $timing $timing-function,
@@ -25,6 +25,12 @@
 
     &:hover {
         background: none !important;
+    }
+}
+
+@media only screen and (min-width: $md) {
+    .blocks-item {
+        width: (1/3) * 100% !important;
     }
 }
 
