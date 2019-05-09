@@ -16,3 +16,12 @@ main .sub-nav {
     padding: 0 2 * $spacer 0 0;
     max-width: none;
 }
+
+.container {
+    padding-bottom: $spacer;
+}
+
+.profile-header,
+.profile-nav {
+    background: none;
+}

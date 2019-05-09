@@ -34,9 +34,9 @@
 }
 
 .header {
-    a:hover,
-    a:visited,
-    a:active,
+    a:not([role="menuitem"]):hover,
+    a:not([role="menuitem"]):visited,
+    a:not([role="menuitem"]):active,
     .btn:hover,
     .btn:visited,
     .btn:active,
@@ -46,7 +46,7 @@
         color: $white;
     }
 
-    a:hover {
+    a:not([role="menuitem"]):hover {
         transition: color $timing $timing-function;
     }
 
