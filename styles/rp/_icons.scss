@@ -1,0 +1,51 @@
+a {
+    .category-icon {
+        margin: 0 auto $spacer / 2;
+        width: 56px;
+        height: 56px;
+        background-image: url('/assets/logo-solo-red.svg');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+// Certification
+a[data-id="202701778"] {
+    .category-icon { background-image: url('/assets/icons/certification@2x.png'); }
+}
+
+// Product information
+a[data-id="202706347"],
+a[data-id="360000709012"],
+a[data-id="360000709412"] {
+    .category-icon { background-image: url('/assets/icons/education@2x.png'); }
+}
+
+// Getting Started
+a[data-id="202648247"] {
+    .category-icon { background-image: url('/assets/icons/getting-started@2x.png'); }
+}
+
+// Email Optimization
+a[data-id="203008247"] {
+    .category-icon { background-image: url('/assets/icons/infrastructure@2x.png'); }
+}
+
+// Mailbox providers and blacklists
+a[data-id="203070427"] {
+    .category-icon { background-image: url('/assets/icons/mailbox@2x.png'); }
+}
+
+// Sender education
+a[data-id="202591877"] {
+    .category-icon { background-image: url('/assets/icons/marketing@2x.png'); }
+}
+
+// a[data-id="202706347"] {
+//     .category-icon { background-image: url('/assets/icons/news@2x.png'); }
+// }
+
+// a[data-id="202706347"] {
+//     .category-icon { background-image: url('/assets/icons/videos@2x.png'); }
+// }
