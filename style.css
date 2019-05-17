@@ -4707,36 +4707,36 @@ a .category-icon {
   margin: 0 auto 12.5px;
   width: 56px;
   height: 56px;
-  background-image: url("/assets/logo-solo-red.svg");
+  background-image: url("/hc/assets/logo-solo-red.svg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 a[data-id="202701778"] .category-icon {
-  background-image: url("/assets/icons/certification@2x.png");
+  background-image: url("/hc/assets/icon-certification.png");
 }
 
 a[data-id="202706347"] .category-icon,
 a[data-id="360000709012"] .category-icon,
 a[data-id="360000709412"] .category-icon {
-  background-image: url("/assets/icons/education@2x.png");
+  background-image: url("/hc/assets/icon-education.png");
 }
 
 a[data-id="202648247"] .category-icon {
-  background-image: url("/assets/icons/getting-started@2x.png");
+  background-image: url("/hc/assets/icon-getting-started.png");
 }
 
 a[data-id="203008247"] .category-icon {
-  background-image: url("/assets/icons/infrastructure@2x.png");
+  background-image: url("/hc/assets/icon-infrastructure.png");
 }
 
 a[data-id="203070427"] .category-icon {
-  background-image: url("/assets/icons/mailbox@2x.png");
+  background-image: url("/hc/assets/icon-mailbox.png");
 }
 
 a[data-id="202591877"] .category-icon {
-  background-image: url("/assets/icons/marketing@2x.png");
+  background-image: url("/hc/assets/icon-marketing.png");
 }
 
 .rp-mt-auto {
