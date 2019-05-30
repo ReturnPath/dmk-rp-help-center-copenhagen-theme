@@ -4299,6 +4299,30 @@ hr {
   color: #FFF;
 }
 
+.hero-inner {
+  max-width: 100%;
+}
+
+.hero-inner .search {
+  margin: 0 auto;
+  max-width: 610px;
+}
+
+.login-reminder {
+  margin-bottom: 0 !important;
+  padding: 25px;
+  background-color: #F5F6F7;
+  border-radius: 6px;
+}
+
+.login-reminder h2 {
+  margin-bottom: 0 !important;
+}
+
+.login-reminder a, .login-reminder font {
+  color: #CB333B !important;
+}
+
 body {
   font-family: "adelle-sans", sans-serif;
   font-size: 16px;
@@ -4707,43 +4731,36 @@ a .category-icon {
   margin: 0 auto 12.5px;
   width: 56px;
   height: 56px;
-  /* background-image: url("/hc/assets/logo-solo-red.svg"); */
-  background-image: url($assets-logo-solo-red-svg);
+  background-image: url("/hc/assets/logo-solo-red.svg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 a[data-id="202701778"] .category-icon {
-  /* background-image: url("/hc/assets/icon-certification.png"); */
-  background-image: url($assets-icon-certification-png);
+  background-image: url("/hc/assets/icon-certification.png");
 }
 
 a[data-id="202706347"] .category-icon,
 a[data-id="360000709012"] .category-icon,
 a[data-id="360000709412"] .category-icon {
-  /* background-image: url("/hc/assets/icon-education.png"); */
-  background-image: url($assets-icon-education-png);
+  background-image: url("/hc/assets/icon-education.png");
 }
 
 a[data-id="202648247"] .category-icon {
-  /* background-image: url("/hc/assets/icon-getting-started.png"); */
-  background-image: url($assets-icon-getting-started-png);
+  background-image: url("/hc/assets/icon-getting-started.png");
 }
 
 a[data-id="203008247"] .category-icon {
-  /* background-image: url("/hc/assets/icon-infrastructure.png"); */
-  background-image: url($assets-icon-infrastructure-png);
+  background-image: url("/hc/assets/icon-infrastructure.png");
 }
 
 a[data-id="203070427"] .category-icon {
-  /* background-image: url("/hc/assets/icon-mailbox.png"); */
-  background-image: url($assets-icon-mailbox-png);
+  background-image: url("/hc/assets/icon-mailbox.png");
 }
 
 a[data-id="202591877"] .category-icon {
-  /* background-image: url("/hc/assets/icon-marketing.png"); */
-  background-image: url($assets-icon-marketing-png);
+  background-image: url("/hc/assets/icon-marketing.png");
 }
 
 .rp-mt-auto {

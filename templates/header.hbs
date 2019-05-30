@@ -36,3 +36,12 @@
     {{search submit=false instant=settings.instant_search class='search search-full'}}
   </div>
 </section>
+
+{{#if signed_in}}
+{{else}}
+    <div class="container">
+        <section class="section login-reminder">
+            <h2>{{dc 'log_in_to_see_content'}}</h2>
+        </section>
+    </div>
+{{/if}}

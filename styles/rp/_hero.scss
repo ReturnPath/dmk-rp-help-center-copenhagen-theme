@@ -5,3 +5,27 @@
     background-color: $rp-red;
     color: $white;
 }
+
+.hero-inner {
+    max-width: 100%;
+
+    .search {
+        margin: 0 auto;
+        max-width: 610px;
+    }
+}
+
+.login-reminder {
+    margin-bottom: 0 !important;
+    padding: $spacer;
+    background-color: $gray-lightest;
+    border-radius: 6px;
+
+    h2 {
+        margin-bottom: 0 !important;
+    }
+
+    a, font {
+        color: $rp-red !important;
+    }
+}
