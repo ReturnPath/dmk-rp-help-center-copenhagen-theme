@@ -4611,6 +4611,10 @@ main .sub-nav {
   margin-top: 0 !important;
 }
 
+.a2a_kit {
+  margin-bottom: 25px;
+}
+
 .a2a_kit a {
   color: #3C4858;
 }
