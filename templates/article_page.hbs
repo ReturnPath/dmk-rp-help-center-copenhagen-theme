@@ -197,7 +197,34 @@
         {{recent_articles}}
       {{/if}}
       {{#if settings.show_article_sharing}}
-        <div class="article-share">{{share}}</div>
+        <div class="a2a_kit a2a_default_style">
+            <a class="a2a_button_facebook">
+                <span class="fa-stack">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                </span>
+            </a>
+            <a class="a2a_button_twitter">
+                <span class="fa-stack">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+            </a>
+            <a class="a2a_button_linkedin">
+                <span class="fa-stack">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
+                </span>
+            </a>
+            <a class="a2a_button_email">
+                <span class="fa-stack">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="far fa-envelope fa-stack-1x fa-inverse"></i>
+                </span>
+            </a>
+        </div>
+
+        <script async src="https://static.addtoany.com/menu/page.js"></script>
       {{/if}}
     </section>
   </div>
